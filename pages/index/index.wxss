@@ -1,0 +1,70 @@
+/**index.wxss**/
+
+/* 主体列表  */
+.section-content {
+  margin-top: 40rpx;
+  padding: 20rpx;
+  background: #E9F0FF;
+  box-shadow:2rpx 3rpx 12rpx rgba(0,0,0,.1);
+  /* min-height: 100vh; */
+}
+.item {
+  display: inline-block;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+  width: calc(50% - 11rpx);
+  border-radius: 10rpx;
+  overflow: hidden;
+  background: #fff;
+}
+.section-content .item:nth-child(2n) {
+  margin-right: 0;
+}
+/* item图片 */
+.item-img {
+  width: 100%;
+  border: 1rpx solid #E9F0FF;
+}
+/* item说明 */
+.item-text {
+  padding: 18rpx 16rpx 16rpx;
+  font-size: 36rpx;
+  color: #202020;
+}
+.score {
+  padding-top: 10rpx;
+  font-size: 30rpx;
+}
+.score text {
+  margin-right: 10rpx;
+  color: #1970e3;
+}
+.item-title {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.item-content {
+  height:56rpx;
+  line-height:56rpx;
+  margin-top:20rpx;
+}
+.item-btn{
+  float: right;
+  margin: 0;
+  /* width: 118rpx; */
+  height: 56rpx;
+  line-height:56rpx;
+  font-size: 30rpx;
+  color: #666;
+  border-radius:16rpx;
+  background:#e0e0e0;
+}
+.item-btn::after{
+    border: 0;
+}
+.item-primary {
+  color: #fff;
+  background: #3BB7FF;
+}

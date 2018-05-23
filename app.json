@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#339eff",
+    "navigationBarTitleText": "积分商城",
+    "navigationBarTextStyle":"#fff"
+  }
+}

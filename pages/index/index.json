@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "zan-button": "../../dist/btn/index",
+    "user": "../../components/user/index"
+  }
+}

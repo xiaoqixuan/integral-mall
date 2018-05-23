@@ -1,0 +1,13 @@
+<!--components/user/index.wxml-->
+<view class="customer">
+  <view class="avatar">
+    <image src="{{userInfo.avatarUrl}}" class="icon"></image>
+  </view>
+  <view class="info-detail">
+      <view class="personinfo">
+          <text class="name">{{userInfo.nickName}}</text>
+          <view class="score"><text>{{score}}</text>积分</view>
+      </view>
+      <zan-icon type="arrow" class='zan-icon'></zan-icon>
+  </view>
+</view>
