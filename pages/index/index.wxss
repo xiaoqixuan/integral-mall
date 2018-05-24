@@ -1,4 +1,40 @@
 /**index.wxss**/
+.container {
+  background: #f0f0f0;
+}
+/* 用户信息 */
+.customer {
+  display: flex;
+  background:#fff;
+  box-shadow: 2rpx 3rpx 12rpx rgba(0,0,0,.1);
+}
+.avatar .icon {
+  width:100rpx;
+  height:100rpx;
+  margin:30rpx 40rpx;
+  border-radius:50%;
+}
+.info-detail {
+  flex: 6;
+  position: relative;
+  padding: 40rpx 0; 
+  font-size: 30rpx;
+  text-align: left;
+}
+.score {
+  padding-top: 10rpx;
+  font-size: 26rpx;
+}
+.score text {
+  margin-right: 10rpx;
+  color: #1970e3;
+  /* font-size: 26rpx; */
+}
+.info-detail .zan-icon {
+  position: absolute;
+  top: 62rpx;
+  right: 20rpx;
+}
 
 /* 主体列表  */
 .section-content {

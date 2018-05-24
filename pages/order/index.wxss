@@ -1,0 +1,43 @@
+/* pages/order/index.wxss */
+.order {
+  background: #E9F0FF;
+  height: 100vh;
+  overflow-y: auto;
+}
+.item-wrap {
+  margin: 30rpx 0;
+  padding: 20rpx;
+  background: #fff;
+  box-shadow: 2rpx 3rpx 12rpx rgba(0,0,0,.2);
+}
+/* 上部 */
+.top {
+  padding-bottom: 15rpx;
+  border-bottom: 1px solid #c9c9c9;
+}
+.state {
+  float: right;
+  color: #339eff;
+}
+/* 中部 */
+.center {
+  display: flex;
+  padding: 15rpx 0;
+  border-bottom: 1px solid #c9c9c9;
+}
+.center image {
+  margin-right: 20rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 20rpx;
+}
+.desc {
+  padding: 40rpx 0;
+}
+/* 下部 */
+.bottom {
+  padding-top: 15rpx;
+}
+.special {
+  color: #339eff;
+}

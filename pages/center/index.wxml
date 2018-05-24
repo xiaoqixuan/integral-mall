@@ -1,0 +1,36 @@
+<!--pages/center/index.wxml-->
+<view class="container con-padding">
+  <!-- 上部 -->
+  <view class="top">
+    <view class="circle">
+      <text>积分</text>
+      <view class="big">500</view>
+    </view>
+    <view class="link-wrap">
+        <view
+          class="item link-btn"
+          wx:for="{{links}}"
+          bindtap='toPage'
+          data-item='{{item}}'
+          >
+          <zan-icon type="{{item.icon}}" class="link-icon"></zan-icon>{{item.name}}
+        </view>
+    </view>
+    <view class="split-line">
+      <text class="before line"></text>
+      <text class="after line"></text>
+      积分明细
+    </view>
+  </view>
+  <!-- 列表 -->
+  <view class="content">
+    <view class="item-wrap" wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]}}">
+      <view class="left">
+        <text class="title">兑奖订单：201805242218</text>
+        <view class="time">2018-05-24 22:18:00</view>
+      </view>
+      <view class="right" wx:if="{{index%3 === 0}}">- 50</view>
+      <view class="right increase" wx:else>+ 40</view>
+    </view>
+  </view>
+</view>

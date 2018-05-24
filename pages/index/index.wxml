@@ -1,16 +1,34 @@
 <!--index.wxml-->
 <view class="container">
-  <user userInfo="{{userInfo}}" score="{{score}}"></user>
+  <!-- <user userInfo="{{userInfo}}" score="{{score}}"></user> -->
+  <view class="customer">
+    <view class="avatar">
+      <image src="{{userInfo.avatarUrl}}" class="icon"></image>
+    </view>
+    <view class="info-detail">
+        <view class="personinfo">
+            <text class="name">{{userInfo.nickName}}</text>
+            <view class="score"><text>{{score}}</text>积分</view>
+        </view>
+        <navigator
+          url="../center/index"
+          open-type="redirect"
+          hover-class="other-navigator-hover"
+          >
+          <zan-icon type="arrow" class='zan-icon'></zan-icon>
+        </navigator>
+    </view>
+  </view>
   <!-- 列表  -->
   <view class="section-content" style="flex-direction:row;">
     <view class="item" wx:for="{{array}}" wx:key='{{index}}'>
       <image src="./imgs/item.png" class="item-img"></image>
       <view class="item-text">
-        <view class="item-title">{{item.name}}</view>
+        <view class="item-title"><navigator url="{{'../detail/index?id='+ item.id}}" hover-class="navigator-hover">{{item.name}}</navigator></view>
         <view class="item-content">
           <text class="score"><text>{{item.num}}</text>积分</text>
           <button size="20rpx" class="item-btn" wx:if="{{!item.isConversion}}">积分不足</button>
-          <button size="20rpx" class="item-btn item-primary" wx:else >兑换</button>
+          <button size="20rpx" class="item-btn item-primary" wx:else>兑换</button>
         </view>
       </view>
     </view>
