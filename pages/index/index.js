@@ -7,7 +7,7 @@ Page({
     userInfo: {},
     score: 500,
     array: [
-      { id: 1,name: '狗粮 单身狗的专属食粮', num: 200, isConversion: false },
+      { id: 1,name: '狗粮 单身狗的专属食粮,专属的哦', num: 200, isConversion: false },
       { id: 2,name: '猫粮 喵咪的最爱', num: 200, isConversion: true },
       { id: 3,name: '狗粮 单身狗的专属食粮', num: 200, isConversion: true },
       { id: 4,name: '猫粮 喵咪的最爱', num: 200, isConversion: false },

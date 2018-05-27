@@ -1,18 +1,22 @@
-// pages/order/index.js
+// pages/address/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    forms: [
+      { title: '收货人', placeholder: '请输入收货人', value: '李XX' },
+      { title: '联系方式', placeholder: '请输入联系方式', value: '132****6587' },
+      { title: '收货地址', placeholder: '请输入详细地址（最多50字）', value: '成都市天府新区华阳' }
+    ]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options.query)
+    console.log('地址：' + options.id)
   },
 
   /**

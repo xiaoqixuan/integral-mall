@@ -1,0 +1,15 @@
+<!--pages/address/index.wxml-->
+<view class="container">
+  <view class="form-wrap">
+    <view wx:for="{{forms}}">
+      <zan-field
+        title="{{ item.title }}"
+        placeholder="{{ item.placeholder }}"
+        value="{{ item.value }}"
+      ></zan-field>
+    </view>
+  </view>
+  <view class="btn-wrap">
+    <zan-button type="primary" bindtap='exchangeGoods'data-id='{{id}}'>提交</zan-button>
+  </view>
+</view>

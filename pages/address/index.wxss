@@ -1,0 +1,12 @@
+/* pages/address/index.wxss */
+.container {
+  background:#E9F0FF;
+  padding: 30rpx 0;
+}
+.form-wrap {
+  background: #fff;
+}
+/* 提交按钮 */
+.btn-wrap {
+  margin-top: 60rpx;
+}

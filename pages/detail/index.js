@@ -5,14 +5,17 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    id: null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    this.setData({
+      id: options.id
+    })
+    console.log('详情：' + options.id)
   },
 
   /**
@@ -62,5 +65,16 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+
+  /**
+   * 兑换商品
+   */
+  exchangeGoods: function (e) {
+    // const id = e.currentTarget.dataset.id;
+    const url = '../address/index?id=' + this.data.id;
+    wx.navigateTo({
+      url
+    })
   }
 })

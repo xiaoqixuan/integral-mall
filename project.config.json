@@ -57,6 +57,12 @@
 					"name": "详情",
 					"pathName": "pages/detail/index",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "收货地址",
+					"pathName": "pages/address/index",
+					"query": ""
 				}
 			]
 		}

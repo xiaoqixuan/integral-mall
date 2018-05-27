@@ -64,8 +64,8 @@
 /* item说明 */
 .item-text {
   padding: 18rpx 16rpx 16rpx;
-  font-size: 36rpx;
-  color: #202020;
+  font-size: 32rpx;
+  color: #333;
 }
 .score {
   padding-top: 10rpx;
@@ -81,6 +81,9 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.item-title navigator {
+  display: inline-block;
+}
 .item-content {
   height:56rpx;
   line-height:56rpx;
@@ -94,7 +97,7 @@
   line-height:56rpx;
   font-size: 30rpx;
   color: #666;
-  border-radius:16rpx;
+  border-radius:10rpx;
   background:#e0e0e0;
 }
 .item-btn::after{

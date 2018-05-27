@@ -1,2 +1,15 @@
 <!--pages/detail/index.wxml-->
-<text>啦啦啦</text>
+<view class="container">
+  <image src="http://img2.imgtn.bdimg.com/it/u=3659960074,1763764868&fm=27&gp=0.jpg"></image>
+  <view class="desc">
+    <text class="title">价值100元优惠券</text>
+    <view class="score"><text>50</text>积分</view>
+  </view>
+  <view class="detail">
+    <view class="detail-title">商品详情介绍</view>
+    <view class="content">测完过后你出去尽快成为</view>
+  </view>
+  <view class="btn-wrap">
+    <zan-button type="primary" bindtap='exchangeGoods'data-id='{{id}}'>立即兑换</zan-button>
+  </view>
+</view>
